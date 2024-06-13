@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>All Chart</title>
+    <style>
+        .peta-interaktif {            
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+
+        .chart {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left-chart {
+            width: 45%;
+            border: 1px solid black;
+        }
+
+        .right-chart {
+            width: 45%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="peta-interaktif">
+        <iframe src="hasilmap.html" width="100%" height="500px"></iframe>
+    </div>
+
+    <div class="chart">
+        <div class="left-chart">
+            <div id="pieplot"></div>
+            <script src="piechart.js"></script>
+        </div>
+        <div class="right-chart">
+            <div id="barplot"></div>
+            <script src="barchart.js"></script>
+        </div>
+    </div>
+</body>
+</html>
